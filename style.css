@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+body {
+  background-color: #f0f8ff;
+  color: #2f4f4f;
+  font-size: medium;
+  line-height: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; /* if you want the light version */
+}
+
+header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(12, 135, 206);
+  line-height: normal;
+  font-size: larger;
+ }
+
+/* a {
+  color: rgb(43, 113, 175);
+  text-decoration: none;
+  transition: color 0.3s ease;
+} */
+ /* ceci est la configuration de base */
+
+@media (prefers-reduced-motion: no-preference){
+  a {
+  color: rgb(43, 113, 175);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  }
+}
+
+a:hover {
+  color: rgb(197, 222, 243);
+  text-decoration: none;
+}
+
+.img-circle{
+  border-radius: 60%;
+  padding: 50px;
+  width: 255px;
+  height: 255px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.container {
+  width: 900px;  /* Définit la largeur */
+  margin: 0px auto; /* Définit automatiquement les marges à gauche/droite */
+}
+
+
+.card{
+  background: white;
+  padding: 30px;
+  margin: 25px auto;
+  border: 1px solid lightblue;
+  box-shadow: 3px 2px 2px rgb(177, 221, 236, 0.51);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  list-style: none;
+  width: 2em;
+  font-size: 70px;
+
+}
+
+.text-center{
+ text-align: center;
+}
+
+ul{
+  padding: 0;
+}
+
+.btn-blue{
+  background-color: rgb(150, 195, 253);
+  color: aliceblue;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: small;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
